@@ -297,9 +297,9 @@
                   <i class="fas fa-fan"></i> FAN On
                 </button>
 
-                <!-- <div class="col-sm-12">
-                  <input id="range_0" type="text" name="range_5" value="">
-                </div> -->
+                <div class="col-sm-12">
+                  <input id="range_4" type="text" name="range_5" value="">
+                </div>
               </div>
             </div>
             
@@ -420,8 +420,8 @@
       hasGrid : true
     })
     $('#range_6').ionRangeSlider({
-      min     : -50,
-      max     : 50,
+      min     : 16,
+      max     : 30,
       from    : 0,
       type    : 'single',
       step    : 1,
@@ -431,12 +431,14 @@
     })
 
     $('#range_4').ionRangeSlider({
-      type      : 'single',
-      step      : 100,
-      postfix   : ' light years',
-      from      : 55000,
-      hideMinMax: true,
-      hideFromTo: false
+      min     : 1,
+      max     : 6,
+      from    : 0,
+      type    : 'single',
+      step    : 1,
+      postfix : '~',
+      prettify: false,
+      hasGrid : true
     })
     $('#range_3').ionRangeSlider({
       type    : 'double',
